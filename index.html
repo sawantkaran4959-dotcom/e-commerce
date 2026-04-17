@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1X8M1S8BJY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1X8M1S8BJY');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1X8M1S8BJY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1X8M1S8BJY');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="XEDVOXbz73tkebp5uRYTKn-Cn-hWqe6CHJno7y3V7YU" />
@@ -28,9 +26,9 @@
         }
         .image-card {
             background: #eee;
-            border: 2px dashed #bbb;
+            border: 1px solid #ddd; /* Changed from dashed for a cleaner look */
             border-radius: 5px;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
         img {
@@ -40,7 +38,34 @@
             display: block;
             margin-bottom: 10px;
         }
-        .label { font-weight: bold; font-size: 0.9em; color: #666; }
+        .label { font-weight: bold; font-size: 0.9em; color: #666; margin-bottom: 15px; }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background: #555;
+        }
+
+        .btn-main {
+            margin-top: 10px;
+            background: #007bff; /* A blue color for the main action */
+        }
+        
+        .btn-main:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -48,21 +73,25 @@
 <div class="container">
     <h1>Welcome to My Website</h1>
     <p>This layout is ready for your content. Replace the placeholder images below with your own files.</p>
+    <a href="#contact" class="btn btn-main">Contact Me</a>
 
     <div class="gallery">
         <div class="image-card">
             <img src="https://via.placeholder.com/400x300?text=Main+Feature+Image" alt="Placeholder 1">
             <div class="label">Feature Image 1</div>
+            <a href="#" class="btn">View Project</a>
         </div>
 
         <div class="image-card">
             <img src="https://via.placeholder.com/400x300?text=Second+Project+Image" alt="Placeholder 2">
             <div class="label">Feature Image 2</div>
+            <a href="#" class="btn">View Project</a>
         </div>
 
         <div class="image-card">
             <img src="https://via.placeholder.com/400x300?text=Third+Project+Image" alt="Placeholder 3">
             <div class="label">Feature Image 3</div>
+            <a href="#" class="btn">View Project</a>
         </div>
     </div>
 </div>
